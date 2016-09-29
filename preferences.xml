@@ -1,0 +1,61 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Text Features">
+
+        <ListPreference
+            android:key="Colors"
+            android:title="Text Colors"
+            android:summary="Change the color of your text"
+            android:entries="@array/Text_Colors"
+            android:entryValues="@array/Out_Colors"
+            android:dialogTitle="Choose a text color to display" />
+
+
+        <ListPreference
+            android:key="Fonts"
+            android:title="Fonts"
+            android:summary="Choose a font for your text"
+            android:entries="@array/Fonts"
+            android:entryValues="@array/Out_Fonts"
+            android:dialogTitle="Pick a font from below" />
+
+
+
+
+        <PreferenceScreen
+            android:key="Styles"
+android:title="Styles"
+    android:summary="Choose from an assortment of styles">
+            <CheckBoxPreference
+
+                android:key="underline"
+                android:title="Underline"
+                android:summary="Underline your text"
+                />
+            <CheckBoxPreference
+            android:key="bold"
+            android:title="Bold"
+            android:summary="Make your text bold"
+            />
+            <CheckBoxPreference
+                android:key="italic"
+                android:title="Italic"
+                android:summary="Make your text italic"
+                />
+
+
+    </PreferenceScreen>
+    </PreferenceCategory>
+
+<PreferenceCategory android:title="Simple Preferences">
+    <ListPreference
+        android:key="Background"
+        android:title="Background"
+        android:summary="Choose a background color for your app"
+        android:entries="@array/Bkg_Colors"
+        android:entryValues="@array/Out_Bkg"
+        android:dialogTitle="Choose your desired background color" />
+
+
+</PreferenceCategory>
+    </PreferenceScreen>
